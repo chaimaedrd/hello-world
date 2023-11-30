@@ -22,6 +22,6 @@ steps:
     goals: 'clean install'
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    PathtoPublish: '$(Build.DefaultWorkingDirectory)/target'
     ArtifactName: 'drop'
     publishLocation: 'Container'
